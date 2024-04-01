@@ -2,18 +2,18 @@
 
 int main()
 {
-    GLFWwindow* window;
+    if (!glfwInit()) { return -1; }
 
-    /* Initialize the library */
-    if (!glfwInit())
-        return -1;
-
+    // Provide target OpenGL
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+    
+    // Specify wanting only the modern functionality
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(1280, 720, "GraphicsProject", NULL, NULL);
+    auto window = glfwCreateWindow(1280, 720, "GraphicsProject", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
