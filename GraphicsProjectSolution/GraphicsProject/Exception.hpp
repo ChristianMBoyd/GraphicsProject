@@ -4,6 +4,10 @@
 #include <exception>
 #include <stacktrace>
 
+/*
+This is the OmegaException as provided in the cppcon talk "Exceptionally Bad : The Story on the Misuse of Exceptions and How to Do Better."
+The slides can be found at https://github.com/CppCon/CppCon2023.
+*/
 template<typename DATA>
 class Exception : std::exception
 {
