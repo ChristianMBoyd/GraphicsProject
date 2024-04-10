@@ -3,7 +3,6 @@ import Exception;
 
 int main()
 {
-	auto except = Exception("hi", 5);
 	if (!glfwInit()) { return -1; }
 
 	// Provide target OpenGL
