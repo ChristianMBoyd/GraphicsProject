@@ -21,5 +21,11 @@
     <ClCompile Include="Exception.ixx">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Window_creator.ixx">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window_creator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

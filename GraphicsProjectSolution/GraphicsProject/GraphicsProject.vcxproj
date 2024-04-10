@@ -148,6 +148,8 @@
   <ItemGroup>
     <ClCompile Include="Exception.ixx" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Window_creator.cpp" />
+    <ClCompile Include="Window_creator.ixx" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
